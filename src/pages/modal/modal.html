@@ -1,0 +1,24 @@
+<!--
+  Generated template for the ModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>modal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div style="background: #ffd">
+	  <input (input)="testFn($event)" name="myTest">
+	  <p>Hello {{test}}!</p>
+	</div>
+
+
+	<button ion-button (click)="closeModal()"><ion-icon name="close">Close modal</ion-icon></button>
+</ion-content>
